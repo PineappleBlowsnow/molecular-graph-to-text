@@ -110,4 +110,4 @@ Packaging checks on 23 September 2026 covered six Python modules, syntax of 34 n
 No repository-wide software license is added where the coursework's original licensing was not documented. Existing course and model terms remain applicable.
 
 
-[Back to the MVA project portfolio](https://github.com/PineappleBlowsnow/mva-portfolio)
+[Back to Ying Jin's project directory](https://github.com/PineappleBlowsnow#mva-projects)
