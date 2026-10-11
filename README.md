@@ -1,6 +1,10 @@
-# Molecular Graph Captioning — ALTeGraD Multimodal Challenge
+# Generating Molecular Descriptions from Graphs
 
-MVA / ALTeGraD coursework, 2025–2026, organized for **Ying Jin's project portfolio**. The task connects molecular graphs to natural-language descriptions. This repository keeps the multimodal challenge separate from the ALTeGraD practical assignments.
+**MVA course — Advanced Learning for Text and Graph Data (ALTeGraD)**
+
+A team data-challenge project connecting molecular graphs to natural-language descriptions. Given atoms and bonds, the system either retrieves a matching description or generates one with a graph-conditioned language model.
+
+**My work.** I implemented the feature-aware retrieval improvements and the DistilGPT2, BioGPT and BioT5 experiments. The course starter, shared data utilities and pretrained models are credited separately.
 
 The code explores two approaches: learn a shared graph–text space and retrieve a description, or condition a language model on graph representations and generate one. It includes a feature-aware GINE retrieval model, a frozen-GNN/DistilGPT2 generator, and BioGPT/BioT5 experiments with LoRA.
 
@@ -99,8 +103,11 @@ These are the configurations currently saved in the notebooks. They are not infe
 
 ## Status and attribution
 
-This is a curated implementation release from local coursework files and a named project archive. Original course utilities and baseline ideas are credited; the repository does not claim every line was written from scratch. A complete collaborator/contribution record and a final report were not present in the selected sources, so no additional author names or individual responsibility claims are invented.
+This is a curated implementation release from local coursework files and a named project archive. Original course utilities and baseline ideas are credited; the repository does not claim every line was written from scratch. Ying Jin confirmed responsibility for the retrieval improvements and all three graph-conditioned language-model implementations on 5 October 2026. The complete team roster and final project report are not included in this repository. The PDF currently at the root is the course challenge specification, not the team's report.
 
-Packaging checks on 23 September 2026 covered six Python modules, syntax of 34 notebook code cells, local import/entry-point consistency, and removal of data, weights and notebook outputs. Several interface/path issues and the GPT2 padding-label mask were corrected in the maintained copy; details are in the provenance document. Training was not rerun, GPU compatibility was not tested, and no leaderboard rank or performance improvement is claimed for this release. Exact historical reproduction would require the original environment, seeds, data and checkpoints.
+Packaging checks on 23 September 2026 covered six Python modules, syntax of 34 notebook code cells, local import/entry-point consistency, and removal of data, weights and notebook outputs. Several interface/path issues and the GPT2 padding-label mask were corrected in the maintained copy; details are in the provenance document. Training was not rerun, GPU compatibility was not tested, and did not independently verify a leaderboard result. Ying recalls a challenge-score change from 0.46 to approximately 0.90; the submission, model version and metric still need to be matched to an official record before this is used as a verified benchmark. The assignment defines a composite BLEU/BERTScore leaderboard metric, distinct from retrieval MRR and recall. Exact historical reproduction would require the original environment, seeds, data and checkpoints.
 
 No repository-wide software license is added where the coursework's original licensing was not documented. Existing course and model terms remain applicable.
+
+
+[Back to the MVA project portfolio](https://github.com/PineappleBlowsnow/mva-portfolio)
